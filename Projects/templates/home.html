@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Natural Gas Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="site-name">Natural Gas Price Prediction</div>
+  <div class="fullscreen-bg" style="background-image: url('https://responsive.fxempire.com/v7/_fxempire_/2024/04/Gas-plant.jpg?func=cover&q=70&width=700');">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('predict') }}">Predict</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section>
+          <h1>Natural Gas Price Prediction</h1>
+          <br>
+          <h2>Welcome to our natural gas price prediction tool. </h2>
+          <br>
+          <p>This tool provides forecasts for natural gas prices based on historical data and predictive modeling.</p>
+          <br>
+          <a href="{{ url_for('predict') }}" class="btn">Get Started</a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Natural Gas Prediction Tool. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

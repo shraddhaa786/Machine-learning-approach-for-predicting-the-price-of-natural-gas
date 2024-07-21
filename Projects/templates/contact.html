@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="fullscreen-bg" style="background-image: url('https://responsive.fxempire.com/v7/_fxempire_/2024/04/Gas-plant.jpg?func=cover&q=70&width=700');">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('predict') }}">Predict</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or need support, please reach out to us using the form below or via our contact details.</p>
+          
+          <form action="submit_form_url" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+      
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+      
+              <button type="submit">Send Message</button>
+          </form>
+      
+          <div class="contact-details">
+              <h3>Our Contact Details</h3>
+              <p>Email: tshraddha153@gmail.com</p>
+              <p>Phone: 8850772392</p>
+             
+          </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Natural Gas Prediction Tool. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
